@@ -1,84 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>About Zhi</title>
-  <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<title>About Zhi</title>
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/script.js"></script> 
 </head>
 <body>
-  <h1>How much do you know Zhi?</h1>
-  
-  <form action="">
-    1. What's her favorite color?<br>
-    <input type="radio" name="color" value="Red"> Red<br>
-    <input type="radio" name="color" value="Blue" onclick="right()"> Blue<br>
-    <input type="radio" name="color" value="Black" > Black
-  </form>
-  <br>
-  <form action="">
-    2. What's her favorite fruit?<br>
-    <input type="radio" name="fruit" value="Banana"> Banana<br>
-    <input type="radio" name="fruit" value="Apple"> Apple<br>
-    <input type="radio" name="fruit" value="Cherry" onclick="right()"> Cherry
-  </form>
-  <br>
-  <form action="">
-    3. What's her birthday?<br>
-    <input type="radio" name="birthday" value="1" onclick="right()"> 30 June<br>
-    <input type="radio" name="birthday" value="2"> 20 August<br>
-    <input type="radio" name="birthday" value="3"> 12 May
-  </form>
-  <br>
-  <form action="">
-    4. What's her size of shoes?<br>
-    <input type="radio" name="shoes" value="34" onclick="right()"> 34-35.5<br>
-    <input type="radio" name="shoes" value="36"> 36-37.5<br>
-    <input type="radio" name="shoes" value="38"> 38-39.5
-  </form>
-  <br>
-  <form action="">
-    5. What's her favorite alcoholic beverage?<br>
-    <input type="radio" name="beverage" value="Cocktail" onclick="right()"> Cocktail<br>
-    <input type="radio" name="beverage" value="Beer"> Beer<br>
-    <input type="radio" name="beverage" value="Wine"> Wine
-  </form>
-  <br>
-  <form action="">
-    6. What's the food she doesn't like?<br>
-    <input type="radio" name="food" value="Liver" onclick="right()"> Liver<br>
-    <input type="radio" name="food" value="Mushroom"> Mushroom<br>
-    <input type="radio" name="food" value="Broccoli"> Broccoli
-  </form>
-  <br>
-  <form action="">
-    7. What's her dream job?<br>
-    <input type="radio" name="job" value="Coder"> Coder<br>
-    <input type="radio" name="job" value="Designer"> Designer<br>
-    <input type="radio" name="job" value="Freelancer" onclick="right()"> Freelancer
-  </form>
-  <br>
-  <form action="">
-    8. Who's her dream boy?<br>
-    <input type="radio" name="boy" value="Handsome" > Handsome guy<br>
-    <input type="radio" name="boy" value="Smart" onclick="right()"> Smart guy<br>
-    <input type="radio" name="boy" value="Rich"> Rich guy
-  </form>
-  <br>
-  <form action="">
-    9. What kind of movies does she like most?<br>
-    <input type="radio" name="movie" value="Horror"> Horror<br>
-    <input type="radio" name="movie" value="Drama"> Drama<br>
-    <input type="radio" name="movie" value="Cartoon" onclick="right()"> Cartoon
-  </form>
-  <br>
-  <form action="">
-    10. Which drink would I choose over the following in most cases?<br>
-    <input type="radio" name="which drink" value="Juice" onclick="right()"> Fresh juice<br>
-    <input type="radio" name="which drink" value="Milk"> Milk<br>
-    <input type="radio" name="which drink" value="Tea"> Tea
-  </form>
-  <br>
-  <button id="button">Done</button>
-  <script src="js/script.js"></script> 
+<h1>How much do you know Zhi?</h1>
+<form id="question" action="">
+1. What's her favorite color?<br>
+<input type="radio" name="color"> Red<br>
+<input type="radio" name="color" id="1"> Blue<br>
+<input type="radio" name="color"> Black<br><br>
+2. What's her favorite fruit?<br>
+<input type="radio" name="fruit"> Banana<br>
+<input type="radio" name="fruit"> Apple<br>
+<input type="radio" name="fruit" id="2"> Cherry<br><br>
+3. What's her birthday?<br>
+<input type="radio" name="birthday" id="3"> 30 June<br>
+<input type="radio" name="birthday"> 20 August<br>
+<input type="radio" name="birthday"> 12 May<br><br>
+4. What's her size of shoes?<br>
+<input type="radio" name="shoes" id="4"> 34-35.5<br>
+<input type="radio" name="shoes"> 36-37.5<br>
+<input type="radio" name="shoes"> 38-39.5<br><br>
+5. What's her favorite alcoholic beverage?<br>
+<input type="radio" name="beverage" id="5"> Cocktail<br>
+<input type="radio" name="beverage"> Beer<br>
+<input type="radio" name="beverage"> Wine<br><br>
+6. What's the food she doesn't like?<br>
+<input type="radio" name="food" id="6"> Liver<br>
+<input type="radio" name="food"> Mushroom<br>
+<input type="radio" name="food"> Broccoli<br><br>
+7. What's her dream job?<br>
+<input type="radio" name="job"> Coder<br>
+<input type="radio" name="job"> Designer<br>
+<input type="radio" name="job" id="7"> Freelancer<br><br>
+8. Who's her dream boy?<br>
+<input type="radio" name="boy"> Handsome guy<br>
+<input type="radio" name="boy" id="8"> Smart guy<br>
+<input type="radio" name="boy"> Rich guy<br><br>
+9. What kind of movies does she like most?<br>
+<input type="radio" name="movie"> Horror<br>
+<input type="radio" name="movie"> Drama<br>
+<input type="radio" name="movie" id="9"> Cartoon<br><br>
+10. Which drink would she choose over the following in most cases?<br>
+<input type="radio" name="which drink" id="10"> Fresh juice<br>
+<input type="radio" name="which drink"> Milk<br>
+<input type="radio" name="which drink"> Tea<br><br>
+<input type="button" value="Submit" id="Submit" onclick="calculateScore()">
+</form>
 </body>
 </html>
