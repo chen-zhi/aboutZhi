@@ -13,17 +13,9 @@ body {
   color: #8d9aa5;
   }
 
-@media (min-width: 1600px) {
+@media (min-width: 1080px) {
   body {
-  background: #fff;
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 0 20px;
-  font: Helvetica Neue, Helvectica, Arial, serif;
-  font-weight: 300;
   font-size: 1em;
-  line-height: 1.5em;
-  color: #8d9aa5;
   }
 }
 
