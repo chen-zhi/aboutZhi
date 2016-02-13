@@ -8,16 +8,10 @@ body {
   padding: 0 20px;
   font: Helvetica Neue, Helvectica, Arial, serif;
   font-weight: 300;
-  font-size: 2em;
+  font-size: 1em;
   line-height: 1.5em;
   color: #8d9aa5;
   }
-
-@media (min-width: 1080px) {
-  body {
-  font-size: 1em;
-  }
-}
 
 a {
   color: #3f8aBf;
